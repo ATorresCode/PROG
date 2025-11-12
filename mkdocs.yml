@@ -1,0 +1,15 @@
+site_name: Programación con Java
+docs_dir: md
+site_dir: docs
+theme: readthedocs
+nav:
+    - Home: index.md
+    - Tema 1:
+        - Apartado 1.1: U01/U01.1.md
+        - Apartado 1.2: U01/U01.2.md
+    - Tema 2:
+        - Apartado 2.1: U02/U02.1.md
+        - Apartado 2.2: U02/U02.2.md
+    - About: about.md
+extra_css:
+  - css/extra.css
