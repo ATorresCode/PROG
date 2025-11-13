@@ -1,137 +1,539 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Apartado 2.1 - Programación con Java</title>
-    <link rel="stylesheet" href="../../css/theme.css" />
-    <link rel="stylesheet" href="../../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
-        <link href="../../css/extra.css" rel="stylesheet" />
-    
-      <script>
-        // Current page data
-        var mkdocs_page_name = "Apartado 2.1";
-        var mkdocs_page_input_path = "U02\\U02.1.md";
-        var mkdocs_page_url = null;
-      </script>
-    
-    <!--[if lt IE 9]>
-      <script src="../../js/html5shiv.min.js"></script>
-    <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-          <a href="../.." class="icon icon-home"> Programación con Java
-        </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
-                </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Tema 1</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../U01/U01.1/">Apartado 1.1</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../U01/U01.2/">Apartado 1.2</a>
-                  </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Tema 2</span></p>
-              <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Apartado 2.1</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../U02.2/">Apartado 2.2</a>
-                  </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../about/">About</a>
-                </li>
-              </ul>
-      </div>
-    </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../..">Programación con Java</a>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-      </nav>
-      <div class="wy-nav-content">
-        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Tema 2</li>
-      <li class="breadcrumb-item active">Apartado 2.1</li>
-    <li class="wy-breadcrumbs-aside">
-    </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            <div class="section" itemprop="articleBody">
-              
-                
-              
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>2.1 - Métodos - Programación con Java</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../../css/extra.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Programación con Java</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">U01</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../U01/U01.1/" class="dropdown-item">1.1 - Algoritmos y técnicas de representación</a>
+</li>
+                                    
+<li>
+    <a href="../../U01/U01.2/" class="dropdown-item">1.2 - Programación con Java</a>
+</li>
+                                    
+<li>
+    <a href="../../U01/U01.3/" class="dropdown-item">1.3 - Estructuras de control</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">U02</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">2.1 - Métodos</a>
+</li>
+                                    
+<li>
+    <a href="../U02.2/" class="dropdown-item">2.2 - Strings</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">U03</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../U03/U03.1/" class="dropdown-item">3.1 - Arrays</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../about/" class="nav-link">About</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../U01/U01.3/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../U02.2/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
             </div>
-          </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../U01/U01.2/" class="btn btn-neutral float-left" title="Apartado 1.2"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../U02.2/" class="btn btn-neutral float-right" title="Apartado 2.2">Next <span class="icon icon-circle-arrow-right"></span></a>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
     </div>
 
-  <hr/>
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#metodos" class="nav-link">Métodos</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#contenidos" class="nav-link">Contenidos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#1-que-es-un-metodo" class="nav-link">1. ¿Qué es un método?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#2-ventajas-de-definir-metodos" class="nav-link">2. Ventajas de definir métodos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#3-invocacion-de-metodos" class="nav-link">3. Invocación de métodos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#4-crear-un-metodo" class="nav-link">4. Crear un método</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#5-valor-de-retorno" class="nav-link">5. Valor de retorno</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#6-llamar-a-un-metodo" class="nav-link">6. Llamar a un método</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#7-paso-de-argumentos" class="nav-link">7. Paso de argumentos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#8-metodos-sobrecargados" class="nav-link">8. Métodos sobrecargados</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#9-ambito-de-definicion-de-metodos" class="nav-link">9. Ámbito de definición de métodos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#10-uso-de-metodos-de-otras-clases" class="nav-link">10. Uso de métodos de otras clases</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
 
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-  </div>
+<hr />
+<h1 id="metodos">Métodos</h1>
+<h3 id="unidad-21">Unidad 2.1</h3>
+<p><img alt="cc.png" src="https://gvaedu-my.sharepoint.com/personal/a_torressolano_edu_gva_es/_layouts/15/download.aspx?SourceUrl=https://gvaedu-my.sharepoint.com/personal/a_torressolano_edu_gva_es/Documents/04_Benigaslo/10_Plantilles/cc.png" /></p>
+<hr />
+<h2 id="contenidos">Contenidos</h2>
+<ol>
+<li>¿Qué es un método?</li>
+<li>Crear un método</li>
+<li>Valor de retorno</li>
+<li>Llamar a un método</li>
+<li>Paso de argumentos</li>
+<li>Métodos sobrecargados</li>
+<li>Ámbito de definición de métodos</li>
+<li>Uso de métodos de otras clases</li>
+</ol>
+<hr />
+<h2 id="1-que-es-un-metodo">1. ¿Qué es un método?</h2>
+<ul>
+<li>Conjunto de instrucciones referenciadas por un identificador  </li>
+<li>Puede ser llamado desde distintos puntos del programa  </li>
+<li>Existen dos tipos de métodos:</li>
+<li><strong>Funciones</strong>: devuelven un valor</li>
+<li><strong>Procedimientos</strong>: no devuelven un valor</li>
+</ul>
+<h3 id="ejemplos-de-metodos-en-java">Ejemplos de métodos en Java</h3>
+<pre><code class="language-java">double rx = Math.sqrt(78);
+int i = entrada.nextInt();
+System.out.println(&quot;Hola a todos&quot;);
+</code></pre>
+<ul>
+<li><strong>Identificador</strong>: <code>sqrt</code>, <code>nextInt</code>, <code>println</code>  </li>
+<li><strong>Parámetros</strong> entre paréntesis  </li>
+<li>Algunos devuelven <strong>resultado</strong> (<code>sqrt</code> y <code>nextInt</code>), otros no (<code>println</code>)</li>
+</ul>
+<hr />
+<h2 id="2-ventajas-de-definir-metodos">2. Ventajas de definir métodos</h2>
+<ul>
+<li>Reutilización de código </li>
+<li>Resolución de subproblemas</li>
+<li>Mejora la legibilidad</li>
+</ul>
+<hr />
+<h2 id="3-invocacion-de-metodos">3. Invocación de métodos</h2>
+<h3 id="llamada-a-metodos">Llamada a métodos</h3>
+<ul>
+<li>Un método puede llamar (o invocar) a otro, y se transfiere el control hasta que termina  </li>
+<li>Un método se puede llamar a sí mismo (<strong>recursividad</strong>)  </li>
+<li>Como sabemos, en Java, el programa siempre empieza a ejecutarse en el método <code>main</code>, que podrá llamar a otros métodos</li>
+</ul>
+<hr />
+<h3 id="diagrama-de-llamada">Diagrama de llamada</h3>
+<ul>
+<li>M1 ➡️ M2: M1 llama a M2  </li>
+<li>Se pueden transferir datos (<strong>parámetros</strong>)  </li>
+<li>M1 ⬅️ M2: M2 devuelve el control a M1  </li>
+<li>Puede devolver un dato de salida</li>
+</ul>
+<hr />
+<h2 id="4-crear-un-metodo">4. Crear un método</h2>
+<h3 id="componentes-de-un-metodo">Componentes de un método</h3>
+<pre><code class="language-java">static tipo_devuelto nombre([argumentos]) {
+  // instrucciones
+  return valor;
+}
+</code></pre>
+<ul>
+<li><code>tipo_devuelto</code>: tipo de dato del valor que devuelve (<code>void</code> si no devuelve nada)</li>
+<li><code>argumentos</code>: tipo de dato y nombre de cada parámetro dentro del método (opcional)</li>
+<li><code>return</code>: especifica el valor devuelto (inexistente si <code>void</code>)</li>
+</ul>
+<h3 id="ejemplo">Ejemplo</h3>
+<ul>
+<li>Método <code>suma</code> que devuelve la suma de dos enteros</li>
+</ul>
+<pre><code class="language-java">static int suma(int a, int b) {
+  return a + b;
+}
+</code></pre>
+<hr />
+<h2 id="5-valor-de-retorno">5. Valor de retorno</h2>
+<h3 id="ejemplo_1">Ejemplo</h3>
+<pre><code class="language-java">static int maximo(int x, int y) {
+  if (x &gt;= y) return x;
+  else return y;
+}
+</code></pre>
+<ul>
+<li><code>return</code> especifica el valor devuelto  </li>
+<li>Devuelve el control al método invocador</li>
+</ul>
+<hr />
+<h2 id="6-llamar-a-un-metodo">6. Llamar a un método</h2>
+<h3 id="ejemplo-de-m1-que-llama-a-m2">Ejemplo de M1 que llama a M2</h3>
+<ul>
+<li><strong>Argumentos actuales</strong>: contiene los valores con los que M1 invoca a M2 <code>M2(arg1, arg2, ..., argN);</code></li>
+<li>
+<p><strong>Argumentos formales</strong>: especificados en la cabecera de M2 <code>M2(tipo arg1, tipo arg2, ..., tipo argN)</code></p>
+</li>
+<li>
+<p>Los argumentos actuales deben coincidir en número y tipo con los formales</p>
+</li>
+</ul>
+<h3 id="ejemplo-1">Ejemplo 1</h3>
+<ul>
+<li>Implementación del método <code>suma</code></li>
+</ul>
+<pre><code class="language-java">static int suma(int a, int b) {
+  return a + b;
+}
+</code></pre>
+<ul>
+<li>Distintas llamadas al método <code>suma</code> desde <code>main</code></li>
+</ul>
+<pre><code class="language-java">public static void main(String[] args) {
+  int y = suma(5, 3); // y vale 8
+  int z = suma(7, 10); // z vale 17
+}
+</code></pre>
+<h3 id="ejemplo-2">Ejemplo 2</h3>
+<ul>
+<li>Implementación del método <code>maximo</code></li>
+</ul>
+<pre><code class="language-java">static int maximo(int x, int y) {
+  if (x &gt;= y) return x;
+  else return y;
+}
+</code></pre>
+<h3 id="ejemplo-2_1">Ejemplo 2</h3>
+<ul>
+<li>Obtención del máximo de cuatro números</li>
+</ul>
+<pre><code class="language-java">public static void main(String[] args) {
+  int a = 5, b = 12, c = 8, d = 3;
+  int max1 = maximo(a, b); // max1 vale 12
+  int max2 = maximo(c, d); // max2 vale 8
+  int max = maximo(max1, max2); // max vale 12
+}
+</code></pre>
+<h3 id="ejemplo-2_2">Ejemplo 2</h3>
+<ul>
+<li>Otra manera de obtener el máximo de los cuatro números</li>
+</ul>
+<pre><code class="language-java">public static void main(String[] args) {
+  int a = 5, b = 12, c = 8, d = 3;
+  int max = maximo(maximo(a, b), maximo(c, d));
+}
+</code></pre>
+<hr />
+<h3 id="cabecera-vs-llamada">Cabecera vs llamada</h3>
+<table>
+<thead>
+<tr>
+<th>Cabecera (args. formales)</th>
+<th>Llamada (args. actuales)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>int suma(int a, int b)</code></td>
+<td><code>suma(2, 4)</code></td>
+</tr>
+<tr>
+<td><code>int maximo(int x, int y)</code></td>
+<td><code>maximo(7, 9)</code></td>
+</tr>
+<tr>
+<td><code>void imprime(int a, float b, char c)</code></td>
+<td><code>imprime(numero, 3.14, 'x')</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="7-paso-de-argumentos">7. Paso de argumentos</h2>
+<h3 id="tipos-de-paso">Tipos de paso</h3>
+<ul>
+<li><strong>Por valor</strong>: El método no modifica la variable original  </li>
+<li>En Java, los <strong>tipos primitivos</strong> (byte, short, int, long, float, double, boolean, char, e incluso String) se pasan por valor</li>
+<li><strong>Por referencia</strong>: El método puede modificar la variable original</li>
+<li>En Java, los <strong>objetos</strong> se pasan por referencia. Lo veremos más adelante.</li>
+</ul>
+<h3 id="ejemplo-paso-por-valor">Ejemplo paso por valor</h3>
+<pre><code class="language-java">int a = 3;
+System.out.println(&quot;antes: a=&quot; + a);  // antes: a=3
+funcion(a);
+System.out.println(&quot;después: a=&quot; + a);  // después: a=3
 
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-          
+public static void funcion(int x) {
+  x = 5;
+  System.out.println(&quot;dentro: a=&quot; + x); // dentro: a=5
+}
+</code></pre>
+<ul>
+<li>La variable <code>a</code> no se modifica</li>
+</ul>
+<h3 id="comparativa-paso-por-valor-vs-referencia">Comparativa paso por valor vs referencia</h3>
+<table>
+<thead>
+<tr>
+<th>Mecanismo</th>
+<th>Explicación</th>
+<th>Implicaciones</th>
+<th>Ventaja</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Por valor</td>
+<td>Se pasa una copia</td>
+<td>No se modifica el original</td>
+<td>Protege la variable</td>
+</tr>
+<tr>
+<td>Por referencia</td>
+<td>Se pasa la dirección</td>
+<td>Se puede modificar</td>
+<td>Permite devolver valores como argumentos</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="8-metodos-sobrecargados">8. Métodos sobrecargados</h2>
+<h3 id="ejemplo_2">Ejemplo</h3>
+<ul>
+<li>Mismo nombre, diferente número/tipo de argumentos  </li>
+</ul>
+<pre><code class="language-java">int suma(int a, int b) {
+  return a + b;
+}
+
+int suma(int a, int b, int c) {
+  return a + b + c;
+}
+</code></pre>
+<hr />
+<h3 id="ejemplo-de-uso">Ejemplo de uso</h3>
+<ul>
+<li>Podemos llamar al método que queramos según los argumentos que le pasemos</li>
+</ul>
+<pre><code class="language-java">public static void main(String[] args) {
+  int x = suma(5, 10);  // llama al primer método y vale 15
+  int y = suma(5, 10, 15);  // llama al segundo método y vale 30
+}
+</code></pre>
+<hr />
+<h2 id="9-ambito-de-definicion-de-metodos">9. Ámbito de definición de métodos</h2>
+<ul>
+<li>Parámetros y variables locales son accesibles solo dentro del método  </li>
+<li>Una clase puede definir y usar sus propios métodos  </li>
+<li>No hay restricciones en el orden de los métodos. En el caso de existir método <code>main</code>, puede estar en cualquier posición</li>
+</ul>
+<pre><code class="language-java">public class Ejemplo {
+  static void metodo1() { ... }
+  static void metodo2() { ... }
+  public static void main(String[] args) { ... }
+}
+</code></pre>
+<hr />
+<h2 id="10-uso-de-metodos-de-otras-clases">10. Uso de métodos de otras clases</h2>
+<h3 id="metodos-estaticos">Métodos estáticos</h3>
+<ul>
+<li>Podemos usar métodos de otra clase, siempre que sean <code>static</code> (cuando veamos la POO, veremos cómo usar métodos no estáticos de otras clases)</li>
+<li>Para usar un método de otra clase, se escribe <code>NombreClase.nombreMetodo(...)</code></li>
+<li>Ejemplos de métodos <code>static</code> que ya hemos usado: <code>Math.sqrt()</code>, <code>System.out.println()</code></li>
+</ul>
+<h3 id="implementacion">Implementación</h3>
+<pre><code class="language-java">public class Matematicas {
+  public static int factorial(int n) {
+    int resultado = 1;
+    for (int i = 2; i &lt;= n; i++) resultado *= i;
+    return resultado;
+  }
+
+  public static boolean esPrimo(int n) {
+    if (n &lt;= 1) return false;
+    for (int i = 2; i &lt;= Math.sqrt(n); i++) if (n % i == 0) return false;
+    return true;
+  }
+}
+</code></pre>
+<h3 id="llamada-a-metodos-estaticos">Llamada a métodos estáticos</h3>
+<pre><code class="language-java">
+public class PruebaMatematicas {
+  public static void main(String[] args) {
+    int numero = 5;
+    System.out.println(&quot;Factorial de &quot; + numero + &quot;: &quot; + Matematicas.factorial(numero));
+    System.out.println(numero + &quot; es primo: &quot; + Matematicas.esPrimo(numero));
+  }
+}
+</code></pre></div>
+            </div>
         </div>
-      </div>
 
-    </section>
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
 
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="Versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    
-    
-      <span><a href="../../U01/U01.2/" style="color: #fcfcfc">&laquo; Previous</a></span>
-    
-    
-      <span><a href="../U02.2/" style="color: #fcfcfc">Next &raquo;</a></span>
-    
-  </span>
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
 </div>
-    <script src="../../js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = "../..";</script>
-    <script src="../../js/theme_extra.js"></script>
-    <script src="../../js/theme.js"></script>
-      <script src="../../search/main.js"></script>
-    <script>
-        jQuery(function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        });
-    </script>
 
-</body>
+    </body>
 </html>

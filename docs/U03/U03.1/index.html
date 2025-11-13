@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>3.1 - Arrays - Programación con Java</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../../css/extra.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Programación con Java</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">U01</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../U01/U01.1/" class="dropdown-item">1.1 - Algoritmos y técnicas de representación</a>
+</li>
+                                    
+<li>
+    <a href="../../U01/U01.2/" class="dropdown-item">1.2 - Programación con Java</a>
+</li>
+                                    
+<li>
+    <a href="../../U01/U01.3/" class="dropdown-item">1.3 - Estructuras de control</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">U02</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../U02/U02.1/" class="dropdown-item">2.1 - Métodos</a>
+</li>
+                                    
+<li>
+    <a href="../../U02/U02.2/" class="dropdown-item">2.2 - Strings</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">U03</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">3.1 - Arrays</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../about/" class="nav-link">About</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../U02/U02.2/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../about/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#arrays" class="nav-link">Arrays</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#contenidos" class="nav-link">Contenidos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#1-que-es-un-array" class="nav-link">1. ¿Qué es un array?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#2-declaracion-y-creacion" class="nav-link">2. Declaración y creación</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#3-acceso" class="nav-link">3. Acceso</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#4-recorrido" class="nav-link">4. Recorrido</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#5-paso-por-referencia-en-metodos" class="nav-link">5. Paso por referencia en métodos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#6-copia-de-arrays" class="nav-link">6. Copia de arrays</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#7-metodos-utiles" class="nav-link">7. Métodos útiles</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#8-arrays-multidimensionales-2d" class="nav-link">8. Arrays multidimensionales (2D)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<hr />
+<h1 id="arrays">Arrays</h1>
+<h3 id="unidad-31">Unidad 3.1</h3>
+<p><img alt="cc.png" src="https://gvaedu-my.sharepoint.com/personal/a_torressolano_edu_gva_es/_layouts/15/download.aspx?SourceUrl=https://gvaedu-my.sharepoint.com/personal/a_torressolano_edu_gva_es/Documents/04_Benigaslo/10_Plantilles/cc.png" /></p>
+<h2 id="contenidos">Contenidos</h2>
+<ol>
+<li>¿Qué es un array?</li>
+<li>Declaración y creación</li>
+<li>Acceso</li>
+<li>Recorrido</li>
+<li>Paso por referencia en métodos</li>
+<li>Copia de arrays</li>
+<li>Métodos útiles</li>
+<li>Arrays multidimensionales</li>
+</ol>
+<h2 id="1-que-es-un-array">1. ¿Qué es un array?</h2>
+<ul>
+<li><strong>Estructura</strong> que almacena una serie de elementos del mismo tipo</li>
+<li>Acceso por <strong>índice</strong> entero (empieza en 0)</li>
+<li><strong>Tamaño fijo</strong>: se decide al crearlo</li>
+<li>Puede contener tipos primitivos o complejos (objetos, los veremos más adelante)</li>
+<li>Acceder fuera de rango lanza una <strong>excepción</strong> <code>ArrayIndexOutOfBoundsException</code></li>
+</ul>
+<h3 id="tipos-de-arrays">Tipos de arrays</h3>
+<ul>
+<li><strong>Arrays unidimensionales</strong> (vectores)</li>
+<li><strong>Arrays multidimensionales</strong> (matrices)</li>
+<li>En Java son “arrays de arrays”</li>
+</ul>
+<h3 id="arrays-vs-listas">Arrays vs listas</h3>
+<ul>
+<li><strong>Arrays</strong>: tamaño fijo</li>
+<li>Si no se conoce el tamaño estamos obligados a sobredimensionar o redimensionar (crear otro array y copiar)</li>
+<li><strong>Listas</strong> (List): tamaño variable</li>
+<li>Alternativa flexible cuando crece dinámicamente (veremos más adelante)</li>
+</ul>
+<h2 id="2-declaracion-y-creacion">2. Declaración y creación</h2>
+<ul>
+<li><strong>Declarar</strong> variable array</li>
+</ul>
+<pre><code class="language-java">int[] numeros;         // recomendado en Java
+int numerosC[];        // estilo C (válido pero menos claro)
+</code></pre>
+<p>Ahora debemos entender el <code>String[] args</code> del método <code>main</code></p>
+<ul>
+<li><strong>Crear</strong> (instanciar) el array</li>
+</ul>
+<pre><code class="language-java">numeros = new int[4];
+</code></pre>
+<ul>
+<li><strong>Declarar + crear</strong></li>
+</ul>
+<pre><code class="language-java">int[] datos = new int[7];
+</code></pre>
+<ul>
+<li><strong>Inicializar</strong> el array manualmente (asignando por índice)</li>
+</ul>
+<pre><code class="language-java">datos[0] = 10;
+datos[1] = -3;
+datos[2] = 7;
+datos[3] = 0;
+datos[4] = 42;
+datos[5] = 5;
+datos[6] = 9;
+</code></pre>
+<ul>
+<li>Si deseamos inicializar al declararlo, podemos usar llaves <code>{}</code>:</li>
+</ul>
+<pre><code class="language-java">int[] v = {2, -4, 15, -25};
+char[] letras = {'a','b','c'};
+String[] nombres = {&quot;Ana&quot;,&quot;Luis&quot;,&quot;Eva&quot;};
+</code></pre>
+<ul>
+<li>Valores por defecto si no se inicializa:</li>
+<li><strong>numéricos</strong> → 0</li>
+<li><strong>booleanos</strong> → false</li>
+<li>objetos (de momento, <strong>String</strong>) → null</li>
+</ul>
+<h2 id="3-acceso">3. Acceso</h2>
+<ul>
+<li><strong>Lectura</strong></li>
+</ul>
+<pre><code class="language-java">int x = v[2];
+System.out.println(v[3]);
+</code></pre>
+<ul>
+<li><strong>Escritura</strong></li>
+</ul>
+<pre><code class="language-java">v[0] = 99;
+</code></pre>
+<ul>
+<li><strong>Longitud</strong></li>
+</ul>
+<pre><code class="language-java">int n = v.length; // número de elementos
+</code></pre>
+<h2 id="4-recorrido">4. Recorrido</h2>
+<h3 id="for-clasico"><strong>for</strong> clásico</h3>
+<pre><code class="language-java">int[] datos = {1, 2, 3, 4};
+
+for (int i = 0; i &lt; datos.length; i++) {
+  System.out.print(datos[i] + &quot; &quot;);
+}
+</code></pre>
+<ul>
+<li>Control total sobre <strong>índices</strong></li>
+<li>Útil cuando se necesita la <strong>posición</strong></li>
+</ul>
+<h3 id="for-each"><strong>for-each</strong></h3>
+<pre><code class="language-java">int[] datos = {1, 2, 3, 4};
+
+for (int d : datos) {
+  System.out.print(d + &quot; &quot;);
+}
+</code></pre>
+<ul>
+<li>Más simple para leer todos los elementos</li>
+<li>No expone el <strong>índice</strong></li>
+</ul>
+<h3 id="ejemplo-calculo-del-maximo-de-un-array">Ejemplo: cálculo del máximo de un array</h3>
+<pre><code class="language-java">int max1 = Integer.MIN_VALUE; // valor mínimo posible de un int
+// for clásico
+for (int i = 0; i &lt; v.length; i++) {
+  if (v[i] &gt; max1) max1 = v[i];
+}
+
+int max2 = Integer.MIN_VALUE; // valor mínimo posible de un int
+// for-each
+for (int n : v) {
+  if (n &gt; max2) max2 = n;
+}
+</code></pre>
+<h2 id="5-paso-por-referencia-en-metodos">5. Paso por referencia en métodos</h2>
+<ul>
+<li>Al pasar un <strong>array</strong> a un método, se pasa una <strong>referencia</strong> al mismo objeto</li>
+<li>El método puede modificar el contenido del <strong>array</strong> compartido</li>
+</ul>
+<pre><code class="language-java">// Implementación de un método que modifica un array
+void multiplicaPrimeroPor10(int[] x) {
+  x[0] *= 10;
+}
+
+// Uso del método
+int[] a = {1, 2, 3};
+multiplicaPrimeroPor10(a); // a =&gt; [10, 2, 3]
+</code></pre>
+<h2 id="6-copia-de-arrays">6. Copia de arrays</h2>
+<ul>
+<li>Asignación copia la <strong>referencia</strong> (se comparte el mismo array en memoria)</li>
+</ul>
+<pre><code class="language-java">int[] a = {1, 2, 3};
+int[] b = a;      // b y a apuntan al mismo array
+a[0] = 10;        // b[0] también es 10
+</code></pre>
+<ul>
+<li><strong>Clonado</strong> crea otro array con los mismos valores (primitivos)</li>
+</ul>
+<pre><code class="language-java">int[] a = {1, 2, 3};
+int[] b = a.clone(); // copia independiente
+a[0] = 10;           // b sigue siendo [1, 2, 3]
+</code></pre>
+<ul>
+<li><strong>Copia profunda</strong>. Equivalente a clonar pero copiando los valores manualmente</li>
+</ul>
+<pre><code class="language-java">int[] a = {1, 2, 3};
+int[] b = new int[a.length];
+for (int i = 0; i &lt; a.length; i++) {
+  b[i] = a[i]; // nuevo valor
+}
+</code></pre>
+<h2 id="7-metodos-utiles">7. Métodos útiles</h2>
+<ul>
+<li>Se encuentran en la clase <code>Arrays</code> del paquete <code>java.util</code>. Hay que importarla:</li>
+</ul>
+<p><code>java
+  import java.util.Arrays;</code></p>
+<ul>
+<li>
+<p><strong>length</strong>. Devuelve la cantidad de elementos en el array. Se trata de una propiedad, por lo que no lleva paréntesis como los métodos.
+  <code>java
+  int[] a = {1, 2, 3, 4};
+  System.out.println(a.length); // Salida: 4</code></p>
+</li>
+<li>
+<p><strong>Arrays.toString(a)</strong>. Convierte el array <code>a</code> en una representación de cadena, útil para imprimir el contenido del array de forma legible.
+  <code>java
+  int[] a = {1, 2, 3, 4};
+  System.out.println(Arrays.toString(a)); // Salida: [1, 2, 3, 4]</code></p>
+</li>
+<li>
+<p><strong>Arrays.sort(a)</strong>. Ordena el array <code>a</code> en orden ascendente. Modifica el array original.
+  <code>java
+  int[] a = {4, 2, 3, 1};
+  Arrays.sort(a);
+  System.out.println(Arrays.toString(a)); // Salida: [1, 2, 3, 4]</code></p>
+</li>
+<li>
+<p><strong>Arrays.binarySearch(a)</strong>. Realiza una búsqueda binaria en el array <code>a</code>. Debe estar ordenado previamente para que funcione.
+  <code>java
+  int[] a = {1, 2, 3, 4};
+  int index = Arrays.binarySearch(a, 3);
+  System.out.println(index); // Salida: 2</code></p>
+</li>
+<li>
+<p><strong>Arrays.equals(a, b)</strong>. Compara dos arrays <code>a</code> y <code>b</code> para verificar si son iguales en contenido y longitud.
+  <code>java
+  int[] a = {1, 2, 3};
+  int[] b = {1, 2, 3};
+  System.out.println(Arrays.equals(a, b)); // Salida: true</code></p>
+</li>
+<li>
+<p><strong>Arrays.fill(a, valor)</strong>. Rellena el array <code>a</code> con el valor especificado. Todos los elementos del array se establecen en <code>valor</code>.
+  <code>java
+  int[] a = new int[5];
+  Arrays.fill(a, 10);
+  System.out.println(Arrays.toString(a)); // Salida: [10, 10, 10, 10, 10]</code></p>
+</li>
+<li>
+<p><strong>Arrays.copyOf(a, nuevoTam)</strong>. Crea una copia del array <code>a</code> con un nuevo tamaño <code>nuevoTam</code>. Si el nuevo tamaño es mayor, se rellenan los nuevos elementos con <code>null</code> (para arrays de objetos) o <code>0</code> (para arrays de primitivos).
+  <code>java
+  int[] a = {1, 2, 3};
+  int[] b = Arrays.copyOf(a, 5);
+  System.out.println(Arrays.toString(b)); // Salida: [1, 2, 3, 0, 0]</code></p>
+</li>
+<li>
+<p><strong>cadena.split(delimitador)</strong>: pertenece a la clase <code>String</code> (no a <code>Arrays</code>), pero tiene mucha relación con arrays, ya que divide una cadena en un array de cadenas usando un <strong>delimitador</strong> (separador)</p>
+</li>
+<li>Sintaxis: <code>String[] resultado = cadena.split(delimitador);</code></li>
+</ul>
+<pre><code class="language-java">String texto = &quot;Ana,Luis,Eva,Pedro&quot;;
+String[] nombres = texto.split(&quot;,&quot;);
+System.out.println(Arrays.toString(nombres)); 
+// Salida: [Ana, Luis, Eva, Pedro]
+</code></pre>
+<pre><code class="language-java">String frase = &quot;Java es un lenguaje potente&quot;;
+String[] palabras = frase.split(&quot; &quot;);
+
+for (String palabra : palabras) {
+  System.out.println(palabra);
+}
+// Salida:
+// Java
+// es
+// un
+// lenguaje
+// potente
+</code></pre>
+<h2 id="8-arrays-multidimensionales-2d">8. Arrays multidimensionales (2D)</h2>
+<ul>
+<li>Arrays 2D: tabla o <strong>matriz</strong> (filas x columnas)</li>
+<li>En Java se representa como <strong>array de arrays</strong></li>
+</ul>
+<pre><code class="language-java">int[][] m = new int[3][4]; // 3 filas, 4 columnas
+m[2][1] = 24;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>m</th>
+<th>Col 0</th>
+<th>Col 1</th>
+<th>Col 2</th>
+<th>Col 3</th>
+<th>tamaño fila i</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fila 0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><code>m[0].length // 4</code></td>
+</tr>
+<tr>
+<td>Fila 1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><code>m[1].length // 4</code></td>
+</tr>
+<tr>
+<td>Fila 2</td>
+<td>0</td>
+<td>24</td>
+<td>0</td>
+<td>0</td>
+<td><code>m[2].length // 4</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Longitudes</strong>: al ser un array de arrays, cada fila tiene su propia longitud</li>
+</ul>
+<pre><code class="language-java">// tamaño: filas (3) x columnas (4)
+m.length        // filas (3)
+m[0].length     // columnas de la fila 0 (4)
+m[1].length     // columnas de la fila 1 (4)
+m[2].length     // columnas de la fila 2 (4)
+</code></pre>
+<h3 id="matrices-irregulares">Matrices <strong>irregulares</strong></h3>
+<ul>
+<li>En Java, las matrices pueden tener filas de diferentes longitudes</li>
+</ul>
+<pre><code class="language-java">int[][] b = new int[2][];  // declaración de 2 filas sin especificar columnas
+b[0] = new int[3];         // primera fila con 3 columnas
+b[1] = new int[5];         // segunda fila con 5 columnas
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>b</th>
+<th>Col 0</th>
+<th>Col 1</th>
+<th>Col 2</th>
+<th>Col 3</th>
+<th>Col 4</th>
+<th>tamaño fila i</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fila 0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>—</td>
+<td>—</td>
+<td><code>b[0].length // 3</code></td>
+</tr>
+<tr>
+<td>Fila 1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><code>b[1].length // 5</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="matrices-irregulares_1">Matrices irregulares</h3>
+<pre><code class="language-java">int[][] c = {
+  {10, 20},
+  {30, 40, 50, 60},
+  {70}
+};
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>c</th>
+<th>Col 0</th>
+<th>Col 1</th>
+<th>Col 2</th>
+<th>Col 3</th>
+<th>tamaño fila i</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fila 0</td>
+<td>10</td>
+<td>20</td>
+<td>—</td>
+<td>—</td>
+<td><code>c[0].length // 2</code></td>
+</tr>
+<tr>
+<td>Fila 1</td>
+<td>30</td>
+<td>40</td>
+<td>50</td>
+<td>60</td>
+<td><code>c[1].length // 4</code></td>
+</tr>
+<tr>
+<td>Fila 2</td>
+<td>70</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td><code>c[2].length // 1</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="recorridos">Recorridos</h3>
+<pre><code class="language-java">double[][] m = {
+  {1,2,3,4,5},
+  {6,7,8,9,10,11,12}
+};
+</code></pre>
+<ul>
+<li><strong>for</strong> clásico</li>
+</ul>
+<pre><code class="language-java">for (int i = 0; i &lt; m.length; i++) {
+  for (int j = 0; j &lt; m[i].length; j++)
+    System.out.print(m[i][j] + &quot;\t&quot;);
+  System.out.println();
+}
+</code></pre>
+<h3 id="recorridos_1">Recorridos</h3>
+<ul>
+<li><strong>for-each</strong></li>
+</ul>
+<pre><code class="language-java">for (double[] fila : m) {
+  for (double dato : fila)
+    System.out.print(dato + &quot; &quot;);
+  System.out.println();
+}
+</code></pre>
+<h3 id="ejemplo-matriz-identidad-4x4">Ejemplo: matriz identidad 4x4</h3>
+<pre><code class="language-java">double[][] I = new double[4][4];
+
+// Inicializar matriz identidad
+for (int i = 0; i &lt; I.length; i++)
+  for (int j = 0; j &lt; I[i].length; j++) 
+    I[i][j] = (i == j) ? 1.0 : 0.0;
+
+// Imprimir matriz identidad
+for (int i = 0; i &lt; I.length; i++) {
+  for (int j = 0; j &lt; I[i].length; j++)
+    System.out.print(I[i][j] + &quot;\t&quot;);
+  System.out.println();
+}
+</code></pre>
+<h3 id="generalizacion-a-n-dimensiones">Generalización a N dimensiones</h3>
+<pre><code class="language-java">// Total de elementos = producto de tamaños
+// tamaño1 * tamaño2 * ... * tamañoN
+int[][][] t = new int[2][3][4]; // 2*3*4 = 24
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
