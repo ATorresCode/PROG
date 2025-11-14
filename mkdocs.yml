@@ -1,7 +1,27 @@
 site_name: Programación con Java
 docs_dir: md
 site_dir: docs
-# theme: readthedocs
+theme:
+   name: 'material'
+   features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+   font:
+    text: 'Roboto, sans-serif'
+    code: 'Courier New, monospace'
+   icon:
+    repo: 'fontawesome/brands/github'
+   palette:
+    - scheme: default
+      toggle:
+          icon: material/brightness-7 
+          name: Canvia a mode oscur
+
+    - scheme: slate
+      toggle:
+          icon: material/brightness-4
+          name: Canvia a mode clar
 nav:
     - Home: index.md
     - U01:
@@ -15,4 +35,21 @@ nav:
         - 3.1 - Arrays: U03/U03.1.md
     - About: about.md
 extra_css:
-  - css/extra.css
+  - css/style.css
+extra_templates:
+  - index.html
+plugins:
+  - search
+  # - with-pdf
+  # - pdf-export:
+  #     combined: true
+  # - page-to-pdf
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
