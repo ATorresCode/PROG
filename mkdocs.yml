@@ -22,6 +22,9 @@ theme:
       toggle:
           icon: material/brightness-4
           name: Canvia a mode clar
+   logo: img/favicon.ico
+   favicon: img/favicon.ico
+
 nav:
     - Home: index.md
     - U01:
