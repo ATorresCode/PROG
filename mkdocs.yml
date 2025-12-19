@@ -27,7 +27,9 @@ nav:
     - U01:
         - 1.1 - Algoritmos y técnicas de representación: U01/U01.1.md
         - 1.2 - Programación con Java: U01/U01.2.md
-        - 1.3 - Estructuras de control: U01/U01.3.md
+        - 1.3 - Elementos del lenguaje: U01/U01.3.md
+        - 1.4 - Estructuras de control: U01/U01.4.md
+        - 1.5 - Miscelánea: U01/U01.5.md
     - U02:
         - 2.1 - Métodos: U02/U02.1.md
         - 2.2 - Strings: U02/U02.2.md

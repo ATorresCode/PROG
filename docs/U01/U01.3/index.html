@@ -12,7 +12,7 @@
         <link rel="prev" href="../U01.2/">
       
       
-        <link rel="next" href="../../U02/U02.1/">
+        <link rel="next" href="../U01.4/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>1.3 - Estructuras de control - Programación con Java</title>
+        <title>1.3 - Elementos del lenguaje - Programación con Java</title>
       
     
     
@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#elementos-del-lenguaje" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -107,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1.3 - Estructuras de control
+              1.3 - Elementos del lenguaje
             
           </span>
         </div>
@@ -372,6 +377,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.3 - Elementos del lenguaje
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -380,7 +405,7 @@
   <span class="md-ellipsis">
     
   
-    1.3 - Estructuras de control
+    1.3 - Elementos del lenguaje
   
 
     
@@ -390,6 +415,568 @@
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#indice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Índice
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-estructura-basica-de-un-programa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Estructura básica de un programa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Estructura básica de un programa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comentarios-y-separadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comentarios y separadores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-variables-y-tipos-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Variables y tipos de datos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Variables y tipos de datos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipos de datos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-datos-primitivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipos de datos primitivos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identificadores-de-variables-i" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Identificadores de variables I
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identificadores-de-variables-ii-convenciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Identificadores de variables II (convenciones)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#declaracion-de-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Declaración de variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inicializacion-de-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inicialización de variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asignacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Asignación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ambito-de-una-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ámbito de una variable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Constantes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-literales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Literales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Literales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#literales-i" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Literales I
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#literales-ii-caracter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Literales II — carácter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#literales-iii-booleano-y-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Literales III — booleano y String
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-conversion-de-tipos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Conversión de tipos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-operadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Operadores
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Operadores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operadores-unarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operadores unarios
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operadores-aritmeticos-i" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operadores aritméticos I
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operadores-aritmeticos-ii-lista" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operadores aritméticos II (lista)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operadores-de-comparacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operadores de comparación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operadores-logicos-iii" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operadores lógicos I–II
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operadores-logicos-iii-tablas-de-verdad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operadores lógicos III — Tablas de verdad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combinar-comparacion-y-logica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combinar comparación y lógica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operadores-de-asignacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operadores de asignación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operador-de-concatenacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operador de concatenación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prioridad-de-operadores-i" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prioridad de operadores I
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prioridad-de-operadores-ii-ejemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prioridad de operadores II — Ejemplo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-entrada-salida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Entrada / Salida
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Entrada / Salida">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#salida-de-datos-por-pantalla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Salida de datos por pantalla
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entrada-de-datos-del-teclado-i" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrada de datos del teclado I
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entrada-de-datos-del-teclado-ii-scanner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrada de datos del teclado II — Scanner
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entrada-de-datos-del-teclado-iii-metodos-de-scanner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrada de datos del teclado III — métodos de Scanner
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-completo-adivinanza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplo completo — Adivinanza
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-tipos-enumerados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Tipos Enumerados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-para-ampliar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Para ampliar
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Para ampliar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clase-math" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clase Math
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipo-string-uso-sencillo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipo String — uso sencillo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sistema-de-tipos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sistema de tipos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../U01.4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.4 - Estructuras de control
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../U01.5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.5 - Miscelánea
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -648,6 +1235,503 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#indice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Índice
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-estructura-basica-de-un-programa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Estructura básica de un programa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Estructura básica de un programa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comentarios-y-separadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comentarios y separadores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-variables-y-tipos-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Variables y tipos de datos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Variables y tipos de datos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipos de datos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-datos-primitivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipos de datos primitivos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identificadores-de-variables-i" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Identificadores de variables I
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identificadores-de-variables-ii-convenciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Identificadores de variables II (convenciones)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#declaracion-de-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Declaración de variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inicializacion-de-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inicialización de variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asignacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Asignación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ambito-de-una-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ámbito de una variable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Constantes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-literales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Literales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Literales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#literales-i" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Literales I
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#literales-ii-caracter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Literales II — carácter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#literales-iii-booleano-y-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Literales III — booleano y String
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-conversion-de-tipos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Conversión de tipos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-operadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Operadores
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Operadores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operadores-unarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operadores unarios
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operadores-aritmeticos-i" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operadores aritméticos I
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operadores-aritmeticos-ii-lista" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operadores aritméticos II (lista)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operadores-de-comparacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operadores de comparación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operadores-logicos-iii" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operadores lógicos I–II
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operadores-logicos-iii-tablas-de-verdad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operadores lógicos III — Tablas de verdad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combinar-comparacion-y-logica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combinar comparación y lógica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operadores-de-asignacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operadores de asignación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operador-de-concatenacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operador de concatenación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prioridad-de-operadores-i" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prioridad de operadores I
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prioridad-de-operadores-ii-ejemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prioridad de operadores II — Ejemplo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-entrada-salida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Entrada / Salida
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Entrada / Salida">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#salida-de-datos-por-pantalla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Salida de datos por pantalla
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entrada-de-datos-del-teclado-i" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrada de datos del teclado I
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entrada-de-datos-del-teclado-ii-scanner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrada de datos del teclado II — Scanner
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entrada-de-datos-del-teclado-iii-metodos-de-scanner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrada de datos del teclado III — métodos de Scanner
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-completo-adivinanza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplo completo — Adivinanza
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-tipos-enumerados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Tipos Enumerados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-para-ampliar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Para ampliar
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Para ampliar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clase-math" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clase Math
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipo-string-uso-sencillo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipo String — uso sencillo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sistema-de-tipos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sistema de tipos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -664,9 +1748,647 @@
 
 
 
-  <h1>1.3 - Estructuras de control</h1>
+<h1 id="elementos-del-lenguaje">Elementos del Lenguaje</h1>
+<h2 id="indice">Índice</h2>
+<ul>
+<li>Estructura básica de un programa</li>
+<li>Comentarios y separadores</li>
+<li>Variables y tipos de datos</li>
+<li>Tipos de datos</li>
+<li>Tipos de datos primitivos</li>
+<li>Identificadores de variables (I y II)</li>
+<li>Declaración, inicialización, asignación, ámbito</li>
+<li>Constantes</li>
+<li>Literales (I–III)</li>
+<li>Conversión de tipos</li>
+<li>Operadores</li>
+<li>Unarios, aritméticos, comparación, lógicos</li>
+<li>Combinar comparación y lógica</li>
+<li>Asignación, concatenación</li>
+<li>Prioridad de operadores (I–II)</li>
+<li>Entrada / Salida</li>
+<li>Salida por pantalla</li>
+<li>Entrada con <code>Scanner</code> (I–III)</li>
+<li>Ejemplo completo (Adivinanza)</li>
+<li>Tipos enumerados</li>
+<li>Para ampliar</li>
+<li>Clase <code>Math</code> (funciones y constantes)</li>
+<li>Tipo <code>String</code></li>
+<li>Sistema de tipos (valor vs referencia, envoltorios)</li>
+</ul>
+<hr />
+<h2 id="1-estructura-basica-de-un-programa">1. Estructura básica de un programa</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cm">/* Estructura de una clase de Java</span>
+<span class="cm"> * Si no es clase principal, el método main no aparece</span>
+<span class="cm"> */</span>
+<span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">NombreDeLaClase</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Declaración de los atributos de la clase</span>
+<span class="w">    </span><span class="c1">// Declaración de los métodos de la clase</span>
 
+<span class="w">    </span><span class="c1">// El método main indica dónde empieza la ejecución</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Declaración de las variables del método</span>
+<span class="w">        </span><span class="c1">// Sentencias de ejecución del método</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="comentarios-y-separadores">Comentarios y separadores</h3>
+<p><strong>Comentarios</strong>
+- <code>/* … */</code>  (bloque)
+- <code>// …</code>     (línea)
+- <code>/** … */</code> (documentación)</p>
+<p><strong>Separadores</strong>
+- <code>()</code> listas de parámetros (definición y llamada a métodos)
+- <code>{}</code> delimita bloques y valores iniciales de <em>arrays</em>
+- <code>[]</code> declaración de <em>arrays</em> y acceso a sus elementos
+- <code>;</code> separa instrucciones
+- <code>,</code> separa identificadores/argumentos
+- <code>.</code> separa elementos de un objeto (acceso a miembros)</p>
+<hr />
+<h2 id="2-variables-y-tipos-de-datos">2. Variables y tipos de datos</h2>
+<p>Una <strong>variable</strong> permite <strong>almacenar datos</strong>, resultados e intermedios. Toda variable tiene asociado un <strong>tipo de datos</strong> que:
+- Define el <strong>conjunto de valores</strong> que puede almacenar.
+- Determina las <strong>operaciones</strong> que pueden realizarse.</p>
+<p><strong>Declaración en Java</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">Tipo</span><span class="w"> </span><span class="n">Identificador</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div></p>
+<h3 id="tipos-de-datos">Tipos de datos</h3>
+<ul>
+<li><strong>Primitivos</strong></li>
+<li>numéricos: <code>byte</code>, <code>short</code>, <code>int</code>, <code>long</code>, <code>float</code>, <code>double</code></li>
+<li>carácter: <code>char</code></li>
+<li>lógico: <code>boolean</code></li>
+<li><strong>Referencia</strong></li>
+<li><code>String</code>, <em>arrays</em>, clases e interfaces (se verán más adelante).</li>
+</ul>
+<h3 id="tipos-de-datos-primitivos">Tipos de datos primitivos</h3>
+<p><strong>Numéricos</strong>
+- Enteros con diferentes tamaños (byte/short/int/long) y reales (<code>float</code>, <code>double</code>).</p>
+<p><strong>Carácter</strong>
+| Nombre | Tamaño | Representa |
+|---|---|---|
+| <code>char</code> | 2 bytes | Caracteres (letras, números y símbolos). Java usa <strong>Unicode</strong> de 2 bytes. |</p>
+<p><strong>Booleano</strong>
+| Nombre | Tamaño | Representa |
+|---|---|---|
+| <code>boolean</code> | 1 bit | Valores lógicos <code>true</code> / <code>false</code>. |</p>
+<h3 id="identificadores-de-variables-i">Identificadores de variables I</h3>
+<p>Los <strong>identificadores</strong> son los nombres de variables, clases, interfaces, atributos y métodos.</p>
+<p><strong>Reglas</strong>
+- Java <strong>distingue mayúsculas y minúsculas</strong>: <code>var1</code>, <code>Var1</code> y <code>VAR1</code> son distintos.
+- Longitud prácticamente <strong>ilimitada</strong>.
+- <strong>No</strong> puede ser palabra reservada ni <code>true</code>/<code>false</code>.
+- <strong>No</strong> pueden duplicarse en el mismo <strong>ámbito</strong>.
+- Debe <strong>empezar por una letra</strong>; pueden usarse letras latinas/hebreas/cirílicas, y también <code>$</code> (no recomendado) y <code>_</code> (subrayado).
+- <strong>No</strong> usar espacios en blanco ni símbolos que coincidan con <strong>operadores</strong>.</p>
+<h3 id="identificadores-de-variables-ii-convenciones">Identificadores de variables II (convenciones)</h3>
+<ul>
+<li>Variables y métodos: <strong>minúscula</strong> inicial.</li>
+<li>Clases: <strong>mayúscula</strong> inicial.</li>
+<li>Si el identificador tiene varias palabras: primera en minúscula (salvo clases), resto con mayúscula inicial (<strong>camelCase</strong> / <strong>UpperCamelCase</strong>).</li>
+<li><code>variable</code>: <code>añoDeCreacion</code></li>
+<li><code>clase</code>: <code>HolaMundo</code></li>
+</ul>
+<h3 id="declaracion-de-variables">Declaración de variables</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Formas básicas</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">edadPedro</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">34</span><span class="p">;</span>
+<span class="kt">float</span><span class="w"> </span><span class="n">precioPatata</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.2F</span><span class="p">,</span><span class="w"> </span><span class="n">precioChoco</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2.3F</span><span class="p">;</span>
+<span class="kt">char</span><span class="w"> </span><span class="n">car</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;A&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">car2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;\u0041&#39;</span><span class="p">;</span><span class="w"> </span><span class="c1">// 0041 es el Unicode de &#39;A&#39;</span>
 
+<span class="c1">// Otras formas</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w">            </span><span class="c1">// solo declaración</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w">       </span><span class="c1">// declaración + inicialización</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">c</span><span class="p">;</span><span class="w">      </span><span class="c1">// múltiples</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// múltiples con valores</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="inicializacion-de-variables">Inicialización de variables</h3>
+<p>Si una variable <strong>no</strong> se ha inicializado, tiene un <strong>valor por defecto</strong> (cuando es <strong>miembro</strong> de clase):
+- Numéricos → <code>0</code>
+- <code>char</code> → <code>'\u0000'</code>
+- <code>boolean</code> → <code>false</code>
+- Referenciales (objetos) → <code>null</code></p>
+<blockquote>
+<p>Nota: Las <strong>variables locales</strong> deben inicializarse antes de usarse; no tienen valores por defecto.</p>
+</blockquote>
+<h3 id="asignacion">Asignación</h3>
+<p>La instrucción de <strong>asignación</strong> permite <strong>dar</strong> o <strong>modificar</strong> el valor de una variable.
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">identificador</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">expresion</span><span class="p">;</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="n">suma</span><span class="p">;</span><span class="w">         </span><span class="c1">// declaración</span>
+<span class="kt">char</span><span class="w"> </span><span class="n">ch1</span><span class="p">,</span><span class="w"> </span><span class="n">ch2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;u&#39;</span><span class="p">;</span>
+<span class="kt">float</span><span class="w"> </span><span class="n">f1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2.0F</span><span class="p">,</span><span class="w"> </span><span class="n">f2</span><span class="p">;</span><span class="w"> </span>
+
+<span class="n">f2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">34.67F</span><span class="p">;</span>
+<span class="n">suma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">suma</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div></p>
+<h3 id="ambito-de-una-variable">Ámbito de una variable</h3>
+<ul>
+<li>El <strong>ámbito</strong> es la parte del programa donde una variable es <strong>visible</strong> y puede usarse.</li>
+<li><strong>Variables locales</strong>: declaradas dentro del cuerpo de un método; visibles <strong>solo</strong> en ese método.</li>
+<li>Pueden declararse en cualquier punto del cuerpo, aunque es buena práctica <strong>al principio</strong>.</li>
+<li>También pueden declararse dentro de un <strong>bloque</strong> <code>{ … }</code>; serán visibles <strong>solo</strong> dentro del bloque.</li>
+<li>Las variables definidas en un bloque deben tener <strong>nombres diferentes</strong>.</li>
+</ul>
+<h3 id="constantes">Constantes</h3>
+<p>Para declarar una constante se usa el modificador <code>final</code>.
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">final</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">PI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.1415926536</span><span class="p">;</span><span class="w"> </span><span class="c1">// debe inicializarse al declararse</span>
+</code></pre></div></td></tr></table></div></p>
+<hr />
+<h2 id="3-literales">3. Literales</h2>
+<h3 id="literales-i">Literales I</h3>
+<p><strong>Definición</strong>: un <em>literal</em> es un <strong>valor que se expresa a sí mismo</strong>.</p>
+<p><strong>Enteros</strong>
+- Decimal (base 10): <code>21</code>
+- Octal (base 8): <code>025</code>
+- Hexadecimal (base 16): <code>0x3A</code>
+- Sufijo <code>L</code>/<code>l</code> para <code>long</code>: <code>21L</code></p>
+<p><strong>Reales</strong>
+- Notación decimal: <code>345.678</code>, <code>0.00056</code>
+- Notación científica/exponencial: <code>3.45678e2</code>, <code>5.6e-4</code>
+- Sufijos: <code>F</code>/<code>f</code> → <code>float</code>, <code>D</code>/<code>d</code> → <code>double</code>
+  - Por defecto es <code>double</code>; para <code>float</code> usar sufijo <code>F</code>.</p>
+<h3 id="literales-ii-caracter">Literales II — carácter</h3>
+<ul>
+<li>Entre <strong>comillas simples</strong> <code>'…'</code>.</li>
+<li>Ejemplos: <code>'a'</code>, <code>'B'</code>, <code>'{'</code>, <code>'ñ'</code>, <code>'á'</code>.</li>
+<li>Código Unicode del carácter (octal/hexadecimal):</li>
+<li><code>'\141'</code> (octal) → <code>'a'</code></li>
+<li><code>'\u0061'</code> (hex) → <code>'a'</code></li>
+<li><strong>Secuencias de escape</strong> más comunes:</li>
+<li><code>\'</code> comilla simple</li>
+<li><code>\"</code> comillas dobles</li>
+<li><code>\\</code> barra invertida</li>
+<li><code>\b</code> backspace</li>
+<li><code>\n</code> salto de línea</li>
+<li><code>\r</code> retorno de carro</li>
+<li><code>\t</code> tabulador</li>
+</ul>
+<h3 id="literales-iii-booleano-y-string">Literales III — booleano y <code>String</code></h3>
+<ul>
+<li>Booleano: <code>true</code>, <code>false</code>.</li>
+<li><code>String</code>: entre <strong>comillas dobles</strong> <code>"…"</code>.
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Primera línea\nSegunda línea del string\n&quot;</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hol\u0061&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// &quot;Hola&quot;</span>
+</code></pre></div></td></tr></table></div></li>
+</ul>
+<hr />
+<h2 id="4-conversion-de-tipos">4. Conversión de tipos</h2>
+<p>Al asignar: <code>identificador = expresion;</code> ambos deben ser del <strong>mismo tipo</strong> o <strong>compatibles</strong>.</p>
+<p><strong>Conversión implícita (ampliación)</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>short → int → long → float → double
+</code></pre></div></td></tr></table></div></p>
+<p><strong>Conversión explícita (<em>casting</em>)</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="mf">34.56</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+También mediante <strong>funciones</strong> de librerías cuando corresponda.</p>
+<hr />
+<h2 id="5-operadores">5. Operadores</h2>
+<h3 id="operadores-unarios">Operadores unarios</h3>
+<ul>
+<li><strong>Signo</strong>: <code>+expresion</code>, <code>-expresion</code></li>
+<li><strong>Incremento/Decremento</strong>: <code>++</code>, <code>--</code> (pre o post)
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">valor</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="n">i</span><span class="o">++</span><span class="p">;</span><span class="w">     </span><span class="c1">// i = 6 (equivale a i = i + 1)</span>
+<span class="o">--</span><span class="n">i</span><span class="p">;</span><span class="w">     </span><span class="c1">// i = 5 (equivale a i = i - 1)</span>
+
+<span class="n">valor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">;</span><span class="w">  </span><span class="c1">// valor = 5, i = 6</span>
+<span class="n">valor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">;</span><span class="w">  </span><span class="c1">// valor = 7, i = 7</span>
+</code></pre></div></td></tr></table></div></li>
+</ul>
+<h3 id="operadores-aritmeticos-i">Operadores aritméticos I</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
+<span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">52</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">17</span><span class="p">;</span>
+<span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">120</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span>
+<span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">67</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">34</span><span class="p">;</span>
+<span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">32</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">12</span><span class="p">;</span>
+<span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">   </span><span class="c1">// resto de división entera</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="operadores-aritmeticos-ii-lista">Operadores aritméticos II (lista)</h3>
+<ul>
+<li><code>+</code> suma</li>
+<li><code>-</code> resta</li>
+<li><code>*</code> multiplicación</li>
+<li><code>/</code> división</li>
+<li><code>%</code> resto (módulo)</li>
+</ul>
+<h3 id="operadores-de-comparacion">Operadores de comparación</h3>
+<ul>
+<li>Símbolos que evalúan expresiones condicionales y devuelven <strong>boolean</strong>.</li>
+<li>Sintaxis: <code>exp1 operador exp2</code>.</li>
+</ul>
+<p><strong>Relación de operadores</strong>
+- <code>&lt;</code>  menor que
+- <code>&lt;=</code> menor o igual que
+- <code>&gt;</code>  mayor que
+- <code>&gt;=</code> mayor o igual que
+- <code>==</code> igual a
+- <code>!=</code> distinto de</p>
+<p><strong>Ejemplos</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">boolean</span><span class="w"> </span><span class="n">testResult</span><span class="p">;</span>
+<span class="n">testResult</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mi">45</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">35</span><span class="p">);</span>
+<span class="n">testResult</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mi">45</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">45</span><span class="p">);</span>
+<span class="n">testResult</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mi">4</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span>
+<span class="n">testResult</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="sc">&#39;a&#39;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="sc">&#39;b&#39;</span><span class="p">);</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="n">cantidad</span><span class="p">;</span>
+<span class="kt">boolean</span><span class="w"> </span><span class="n">pedidoGrande</span><span class="p">;</span>
+<span class="n">pedidoGrande</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cantidad</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1000</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div></p>
+<h3 id="operadores-logicos-iii">Operadores lógicos I–II</h3>
+<ul>
+<li>Combinan expresiones y devuelven <strong>boolean</strong>.</li>
+<li>Sintaxis: <code>exp1 operador exp2</code>.</li>
+</ul>
+<p><strong>Lista</strong>
+- <code>&amp;&amp;</code> (AND): ambas expresiones deben ser <code>true</code> para resultar <code>true</code>.
+- <code>||</code> (OR): si <strong>una</strong> es <code>true</code>, el resultado es <code>true</code>.
+- <code>!</code>  (NOT): negación lógica.</p>
+<p><strong>Ejemplo</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">edad</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">18</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">sexo</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;H&#39;</span>
+</code></pre></div></td></tr></table></div></p>
+<h3 id="operadores-logicos-iii-tablas-de-verdad">Operadores lógicos III — Tablas de verdad</h3>
+<p><strong>AND</strong></p>
+<table>
+<thead>
+<tr>
+<th>Expres1</th>
+<th>Expres2</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>true</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<p><strong>OR</strong></p>
+<table>
+<thead>
+<tr>
+<th>Expres1</th>
+<th>Expres2</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>true</td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<p><strong>NOT</strong></p>
+<table>
+<thead>
+<tr>
+<th>Expresión</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+<h3 id="combinar-comparacion-y-logica">Combinar comparación y lógica</h3>
+<p>Podemos combinar operadores de comparación y lógicos con instrucciones condicionales.
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">edad</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">25</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">edad</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">14</span>
+</code></pre></div></td></tr></table></div></p>
+<h3 id="operadores-de-asignacion">Operadores de asignación</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">edad</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">34</span><span class="p">;</span>
+<span class="n">edad</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">  </span><span class="c1">// edad = edad + 1</span>
+<span class="n">edad</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w">  </span><span class="c1">// edad = edad - 3</span>
+<span class="n">edad</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">  </span><span class="c1">// edad = edad * 2</span>
+<span class="n">edad</span><span class="w"> </span><span class="o">/=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">  </span><span class="c1">// edad = edad / 2</span>
+<span class="n">edad</span><span class="w"> </span><span class="o">%=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">  </span><span class="c1">// edad = edad % 2</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="operador-de-concatenacion">Operador de concatenación</h3>
+<p>Genera una <strong>cadena</strong> a partir de otras dos:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="s">&quot;Hola&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;, &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;buenos días&quot;</span>
+</code></pre></div></td></tr></table></div></p>
+<h3 id="prioridad-de-operadores-i">Prioridad de operadores I</h3>
+<p>Cuando hay varias operaciones en una expresión, se evalúa con un <strong>orden predeterminado</strong>:
+1. <strong>Paréntesis</strong> (de dentro a fuera)
+2. <strong>Unarios</strong>
+3. <strong>Aritméticos</strong>
+   - Multiplicativos: <code>*</code>, <code>/</code>, <code>%</code>
+   - Sumativos: <code>+</code>, <code>-</code>
+4. <strong>Comparativos/Relacionales</strong>
+5. <strong>Lógicos</strong>
+   - <code>!</code> (NOT)
+   - <code>&amp;&amp;</code> (AND)
+   - <code>||</code> (OR)
+6. <strong>Asignación</strong></p>
+<blockquote>
+<p>Cuando aparecen operadores de la <strong>misma prioridad</strong>, el compilador evalúa <strong>de izquierda a derecha</strong>.</p>
+</blockquote>
+<h3 id="prioridad-de-operadores-ii-ejemplo">Prioridad de operadores II — Ejemplo</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mi">3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">6</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="c1">// Orden de evaluación (referencia de la diapositiva): 1 6 7 2 8 3 4 9 5</span>
+<span class="c1">// Valor final de a = 6</span>
+</code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="6-entrada-salida">6. Entrada / Salida</h2>
+<h3 id="salida-de-datos-por-pantalla">Salida de datos por pantalla</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Se imprime este mensaje sin el retorno de carro&quot;</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Se imprime este mensaje con un retorno de carro&quot;</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="entrada-de-datos-del-teclado-i">Entrada de datos del teclado I</h3>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">char</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">char</span><span class="p">)</span><span class="w"> </span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">.</span><span class="na">read</span><span class="p">();</span><span class="w"> </span><span class="c1">// lee un solo carácter</span>
+</code></pre></div></td></tr></table></div>
+Esta forma es <strong>poco práctica</strong> para números o cadenas.</p>
+<h3 id="entrada-de-datos-del-teclado-ii-scanner">Entrada de datos del teclado II — <code>Scanner</code></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Importamos el paquete donde está la clase</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span>
+
+<span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Exemple</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">primerNum</span><span class="p">;</span>
+<span class="w">        </span><span class="c1">// Declaramos el objeto lector de la clase Scanner</span>
+<span class="w">        </span><span class="n">Scanner</span><span class="w"> </span><span class="n">lector</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Escriu un número i polsa retorn: &quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// Se lee un valor entero y se espera al retorno</span>
+<span class="w">        </span><span class="n">primerNum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lector</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+<span class="w">        </span><span class="n">lector</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span><span class="w"> </span><span class="c1">// limpia el salto de línea</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="entrada-de-datos-del-teclado-iii-metodos-de-scanner">Entrada de datos del teclado III — métodos de <code>Scanner</code></h3>
+<table>
+<thead>
+<tr>
+<th>Método</th>
+<th>Tipo leído</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>nextByte()</code></td>
+<td><code>byte</code></td>
+</tr>
+<tr>
+<td><code>nextShort()</code></td>
+<td><code>short</code></td>
+</tr>
+<tr>
+<td><code>nextInt()</code></td>
+<td><code>int</code></td>
+</tr>
+<tr>
+<td><code>nextLong()</code></td>
+<td><code>long</code></td>
+</tr>
+<tr>
+<td><code>nextFloat()</code></td>
+<td><code>float</code></td>
+</tr>
+<tr>
+<td><code>nextDouble()</code></td>
+<td><code>double</code></td>
+</tr>
+<tr>
+<td><code>nextBoolean()</code></td>
+<td><code>boolean</code></td>
+</tr>
+<tr>
+<td><code>next()</code></td>
+<td><code>String</code></td>
+</tr>
+<tr>
+<td><code>nextLine()</code></td>
+<td><code>String</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ejemplo-completo-adivinanza">Ejemplo completo — <em>Adivinanza</em></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.*</span><span class="p">;</span>
+<span class="kd">class</span> <span class="nc">Adivinanza</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Scanner</span><span class="w"> </span><span class="n">tcl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">valor</span><span class="p">;</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Piensa un numero&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">tcl</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Multiplicalo por 5&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">tcl</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Sumale 6&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">tcl</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Multiplıcalo por 4&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">tcl</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Sumale 9&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">tcl</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Multiplıcalo por 5&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">tcl</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Escribe el resultado&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">valor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tcl</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;El numero que habıas pensado es: &quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">((</span><span class="n">valor</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">165</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="7-tipos-enumerados">7. Tipos Enumerados</h2>
+<p>Son <strong>conjuntos de valores constantes</strong> para los que no existe un tipo predefinido (por ejemplo: días de la semana, estaciones, meses).
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Semana</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">enum</span><span class="w"> </span><span class="n">DiaSemana</span><span class="w"> </span><span class="p">{</span><span class="n">LUNES</span><span class="p">,</span><span class="w"> </span><span class="n">MARTES</span><span class="p">,</span><span class="w"> </span><span class="n">MIERCOLES</span><span class="p">,</span><span class="w"> </span><span class="n">JUEVES</span><span class="p">,</span><span class="w"> </span><span class="n">VIERNES</span><span class="p">,</span><span class="w"> </span><span class="n">SABADO</span><span class="p">,</span><span class="w"> </span><span class="n">DOMINGO</span><span class="p">}</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">DiaSemana</span><span class="w"> </span><span class="n">hoy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DiaSemana</span><span class="p">.</span><span class="na">JUEVES</span><span class="p">;</span>
+<span class="w">        </span><span class="n">DiaSemana</span><span class="w"> </span><span class="n">ultimo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DiaSemana</span><span class="p">.</span><span class="na">DOMINGO</span><span class="p">;</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hoy es &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">hoy</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;\nY el ultimo dia es &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">ultimo</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div></p>
+<hr />
+<h2 id="8-para-ampliar">8. Para ampliar</h2>
+<h3 id="clase-math">Clase <code>Math</code></h3>
+<p><strong>Constantes</strong>
+- <code>Math.E = 2.7182818284590452354</code>
+- <code>Math.PI = 3.14159265358979323846</code></p>
+<p><strong>Funciones de redondeo</strong> (con <code>x</code> de tipo <code>double</code>)
+- <code>ceil(x)</code>: entero más pequeño <strong>≥</strong> <code>x</code>
+- <code>floor(x)</code>: entero más grande <strong>≤</strong> <code>x</code>
+- <code>round(x)</code>: redondea <code>x</code> al entero más próximo</p>
+<p><strong>Funciones trigonométricas</strong> (argumentos en <strong>radianes</strong>)
+- <code>sin(x)</code> — seno
+- <code>cos(x)</code> — coseno
+- <code>asin(x)</code> — arco seno (<code>x</code> entre <code>-1</code> y <code>1</code>)
+- <code>acos(x)</code> — arco coseno (<code>x</code> entre <code>-1</code> y <code>1</code>)
+- <code>atan(x)</code> — arco tangente</p>
+<p><strong>Otras funciones</strong>
+- <code>abs(x)</code> — valor absoluto
+- <code>exp(x)</code> — <em>e</em> elevado a <code>x</code>
+- <code>log(x)</code> — logaritmo natural (<code>x</code> ≥ 0)
+- <code>max(x,y)</code> — máximo
+- <code>min(x,y)</code> — mínimo
+- <code>pow(x,y)</code> — <code>x</code> elevado a <code>y</code>
+- <code>random()</code> — número pseudoaleatorio entre <code>0.0</code> y <code>1.0</code>
+- <code>sqrt(x)</code> — raíz cuadrada (<code>x</code> ≥ 0)</p>
+<h3 id="tipo-string-uso-sencillo">Tipo <code>String</code> — uso sencillo</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">String</span><span class="w"> </span><span class="n">frase</span><span class="p">,</span><span class="w"> </span><span class="n">palabra</span><span class="p">,</span><span class="w"> </span><span class="n">linea</span><span class="p">;</span>
+<span class="n">frase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;En un lugar de la Mancha de cuyo nombre…&quot;</span><span class="p">;</span>
+<span class="c1">// … solicitamos al usuario una frase</span>
+<span class="c1">// … y la frase de entrada es: Oh! es terrible</span>
+<span class="n">palabra</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tcl</span><span class="p">.</span><span class="na">next</span><span class="p">();</span><span class="w">        </span><span class="c1">// palabra = &quot;Oh!&quot;</span>
+<span class="n">linea</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="n">tcl</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span><span class="w">    </span><span class="c1">// linea   = &quot;Oh! es terrible&quot;</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="sistema-de-tipos">Sistema de tipos</h3>
+<p>Dos categorías generales:
+- <strong>Tipo simple o valor</strong>: la variable <strong>contiene directamente</strong> sus datos; cada variable tiene <strong>su propia copia</strong>.
+- <strong>Tipo referencia</strong>: la variable contiene una <strong>referencia/puntero</strong> al objeto; dos variables pueden referirse al <strong>mismo objeto</strong>.</p>
+<p>Los <strong>tipos simples</strong> (primitivos) tienen <strong>clases envoltorio</strong> equivalentes:
+- <code>byte</code>    → <code>java.lang.Byte</code>
+- <code>short</code>   → <code>java.lang.Short</code>
+- <code>int</code>     → <code>java.lang.Integer</code>
+- <code>long</code>    → <code>java.lang.Long</code>
+- <code>float</code>   → <code>java.lang.Float</code>
+- <code>double</code>  → <code>java.lang.Double</code>
+- <code>char</code>    → <code>java.lang.Character</code>
+- <code>boolean</code> → <code>java.lang.Boolean</code></p>
+<blockquote>
+<p>Nota: existen además tipos comunes, cadenas, matrices (<em>arrays</em>), clases y enumeraciones definidas por el usuario.</p>
+</blockquote>
+<hr />
 
 
 
